@@ -6,7 +6,11 @@ development.
 They are acronym of 
 
 S: single responsability
+
 O: open-closed
+
 L: Liskov substitution
+
 I: interface segregation
+
 D: dependency inversion
