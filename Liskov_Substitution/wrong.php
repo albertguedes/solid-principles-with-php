@@ -33,6 +33,14 @@ class Restaurant extends Stablishment
     }
 }
 
+/**
+ * The function now is more restrictive, accepting only food stablishments, 
+ * preventing without inconsistences.
+ *
+ * @param FoodStablishment $stablishment
+ * @param float $budget
+ * @return void
+ */
 function run (Stablishment $stablishment, float $budget): void
 {
     $stablishment->makeDrink();
