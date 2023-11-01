@@ -3,7 +3,7 @@
 The S.O.L.I.D. is a set of principles that appear recurrently in software 
 development that uses Object Oriented paradigm.
 
-They are acronym of 
+They are acronym of :
 
 S: single responsability
 
