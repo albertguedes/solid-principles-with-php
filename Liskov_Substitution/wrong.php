@@ -33,7 +33,7 @@ class Restaurant extends Stablishment
     }
 }
 
-function run( Stablishment $stablishment, float $budget ): void
+function run (Stablishment $stablishment, float $budget): void
 {
     $stablishment->makeDrink();
     $stablishment->makeMeal();
@@ -42,8 +42,8 @@ function run( Stablishment $stablishment, float $budget ): void
 
 // Causes exception, because Bar dont make meal.
 $bar = new Bar();
-run( $bar, 123,00 );
+run( $bar, 123.00 );
 
 // Causes exception, because Restaurant dont make drinks.
 $restaurant = new Restaurant();
-run( $restaurant, 234,00 );
+run( $restaurant, 234.00 );
