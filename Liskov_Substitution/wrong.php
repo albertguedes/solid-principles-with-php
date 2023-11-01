@@ -25,9 +25,6 @@ class Bar extends Stablishment
     }
 }
 
-/**
- * Wrong because makeInvoice isnt implemented.
- */
 class Restaurant extends Stablishment 
 {
     public function makeMeal(): string
