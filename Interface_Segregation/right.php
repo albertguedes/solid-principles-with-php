@@ -68,34 +68,29 @@ class Ecommerce extends VirtualStablishment
     }
 }
 
-class Shopping
-{
-    public function run (Stablishment $stablishment): void
-    {        
-        $stablishment->makeOrder();
-        $stablishment->makePayment(10);
+function run (Stablishment $stablishment): void
+{        
+    $stablishment->makeOrder();
+    $stablishment->makePayment(10);
 
-        // Now, any class that extends PhysicalStablishment can call 
-        // closeDoors, without need to create more if conditions. 
-        if ($stablishment instanceof PhysicalStablishment) 
-        {
-            $stablishment->closeDoors();
-        }
+    // Now, any class that extends PhysicalStablishment can call 
+    // closeDoors, without need to create more if conditions. 
+    if ($stablishment instanceof PhysicalStablishment) 
+    {
+        $stablishment->closeDoors();
+    }
 
-        // VirtualStablishment can call closeSessions. 
-        if ($stablishment instanceof VirtualStablishment) 
-        {
-            $stablishment->closeSessions();
-        }
+    // VirtualStablishment can call closeSessions. 
+    if ($stablishment instanceof VirtualStablishment) 
+    {
+        $stablishment->closeSessions();
     }
 }
 
-$shopping = new Shopping();
-
 $restaurant = new Restaurant();
-$shopping->run($restaurant);
+run($restaurant);
 
 echo PHP_EOL;
 
 $ecommerce = new Ecommerce();
-$shopping->run($ecommerce);
+run($ecommerce);
