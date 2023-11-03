@@ -12,24 +12,25 @@
  */
 class Stablishment 
 {    
-    public function makePayment(): string {
-        return "Payment created.\n";
+    public function makePayment(): void 
+    {
+        echo 'Payment created.' . PHP_EOL;
     }
 }
 
 class Bar extends Stablishment 
 {
-    public function makeDrink(): string
+    public function makeDrink(): void
     {
-        return "Drink created.\n";
+        echo 'Drink created.' . PHP_EOL;
     }
 }
 
 class Restaurant extends Stablishment 
 {
-    public function makeMeal(): string
+    public function makeMeal(): void
     {
-        return "Pasta created.\n";
+        echo 'Pasta created.' . PHP_EOL;
     }
 }
 
@@ -55,3 +56,7 @@ run( $bar, 123.00 );
 // Causes exception, because Restaurant dont make drinks.
 $restaurant = new Restaurant();
 run( $restaurant, 234.00 );
+
+// Causes exception, because Stablishment make only payments.
+$stablishment = new Stablishment();
+run( $stablishment, 345.00 );
