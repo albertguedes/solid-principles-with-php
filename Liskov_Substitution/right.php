@@ -2,10 +2,10 @@
 /**
  * This is right because Stablishment can replace Bar and Restaurant.
  */
-abstract class Stablishment 
+class Stablishment 
 {    
-    public function makePayment(): void {
-        echo 'Payment created.' . PHP_EOL;
+    public function makePayment(float $value): void {
+        echo 'Payment created. The value is $' . $value . '.' . PHP_EOL;
     }
 
     public function makeMeal(): void
@@ -66,4 +66,4 @@ run( $restaurant, 234.00 );
 
 // Works fine.
 $stablishment = new Stablishment();
-run( $Stablishment, 345.00 );
+run( $stablishment, 345.00 );
