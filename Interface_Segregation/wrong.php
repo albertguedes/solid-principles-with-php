@@ -88,6 +88,12 @@ function run (Stablishment $stablishment): void
 $restaurant = new Restaurant();
 run($restaurant);
 
-// Causes exception, because ecommerce doesn't implement closeDoors.
-$ecommerce    = new Ecommerce();
+$ecommerce = new Ecommerce();
 run($ecommerce);
+
+/**
+ * This code runs fine, but the maintainance is not good. 
+ * The methods are very dependable of the concrete class. If we create an Bar 
+ * class, the door isnt at end of the day or we need to add more one if on run 
+ * function, what is a ugly way to maintain the code.
+ */
