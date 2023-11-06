@@ -5,30 +5,30 @@
  */
 class Stablishment 
 {
-    public function makeOrder(): string 
+    public function makeOrder(): void
     {
-        return "Order created.\n";
+        echo 'Order created.' . PHP_EOL;
     }
 
-    public function makePayment(): string 
+    public function makePayment(): void
     {
-        return "Payment created.\n";
+        echo 'Payment created.' . PHP_EOL;
     }
 }
 
 class Dinner extends Stablishment 
 {
-    public function makeMeal(): string 
+    public function makeMeal(): void
     {
-        return "Pie created.\n";
+        echo 'Pie created.' . PHP_EOL;
     }    
 }
 
 class Restaurant extends Stablishment
 {
-    public function makeMeal(): string 
+    public function makeMeal(): void 
     {
-        return "Pasta created.\n";
+        echo 'Pasta created.';
     }    
 }
 
