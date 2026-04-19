@@ -1,16 +1,29 @@
-# SOLID PRINCIPLES
+# S.O.L.I.D. Principles with PHP
 
-The S.O.L.I.D. is a set of principles that appear recurrently in software 
-development that uses Object Oriented paradigm.
+Code examples demonstrating the **S.O.L.I.D.** principles of object-oriented design.
 
-They are acronym of :
+## Principles
 
-S: single responsability
+- **S**ingle Responsibility Principle (SRP)
+- **O**pen/Closed Principle (OCP)
+- **L**iskov Substitution Principle (LSP)
+- **I**nterface Segregation Principle (ISP)
+- **D**ependency Inversion Principle (DIP)
 
-O: open-closed
+Each principle has its own directory with annotated PHP examples.
 
-L: Liskov substitution
+## Usage
 
-I: interface segregation
+```bash
+git clone https://github.com/albertguedes/solid-principles-with-php.git
+cd solid-principles-with-php
+php <principle-folder>/example.php
+```
 
-D: dependency inversion
+## Tech Stack
+
+- PHP (pure OOP)
+
+## License
+
+MIT License - see [LICENSE](LICENSE)
